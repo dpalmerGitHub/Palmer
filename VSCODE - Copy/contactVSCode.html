@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Quick Tools</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+    <link href='C:\Users\danpal01\Desktop\VSCODE\indexVSCodeStyles.css' rel="stylesheet">
+</head>
+
+
+<body data-title='contactVSCode'>
+    <div id="sidebar">
+        <ul class="nav">
+            <li class="active"><a href="C:\Users\danpal01\Desktop\VSCODE\indexVSCode.html"><span class= 'glyphicon glyphicon-home'></span>Home</a></li>
+            <li><a href="#"><span class='glyphicon glyphicon-info-sign'></span>About</a></li>
+            <li>
+                <a href="C:\Users\danpal01\Desktop\VSCODE\contactVSCode.html"><span class='glyphicon glyphicon-envelope'></span>Contact</a>
+            </li>
+            <li><a href="C:\Users\danpal01\Desktop\VSCODE\newQuickToolsVS.html" id='quickTools'><span class='glyphicon glyphicon-wrench'></span>Quick Tools</a></li>
+        </ul>
+    </div>
+
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <a href="#" id="sideBarToggle" class="btn btn-sm navbar-brand">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="C:\Users\danpal01\Desktop\My Stuff\NewResume2017\Federal_Resume_Template_Daniel_Palmer.pdf" class="btn btn-sm btn-info" download>
+                        <span class="glyphicon glyphicon-download"></span><span>RESUME</span>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main" class="container-fluid">
+            <div class='col-md-4 col-md-offset-4'>
+                <header class='centerAlignText'>
+                    <h2>Contact</h2>
+                </header>
+                <p class='centerAlignText greenInfoParagraphs'>It's definitely fun to be creative. This simple contact form is linked to a Google spreadsheet rather than a database. Please provide a valid email address and question and/or comment, and I will respond back as soon as possible. Thank
+                    you.
+                </p>
+            </div>
+
+            <form id='contactForm' data-form-name='Contact'>
+
+
+                <div class='form-group'>
+
+                    <div class='col-md-4 col-md-offset-4'>
+                        <label for='name'>Name:</label>
+                        <input type="text" id='name' class="form-control" />
+                    </div>
+
+
+                    <div class='col-md-4 col-md-offset-4'>
+                        <label for='email'>Email:</label>
+                        <input type="email" id='email' class="form-control" />
+                    </div>
+
+
+                    <div class='col-md-4 col-md-offset-4'>
+                        <label for='comments'>Comments:</label>
+                        <textarea id='comments' class="form-control"></textarea>
+                    </div>
+
+
+                    <div class='col-md-4 col-md-offset-4'>
+                        <button type="button" id='submitContactForm' class='btn btn-primary'>Submit</button>
+                        <p id='submittedSuccessfullyMessage'></p>
+                    </div>
+
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+        <div id="footer" class="container-fluid">
+            <div class="navbar  navbar-fixed-bottom">
+                <h4 class="text-center text-info"><span class='glyphicon glyphicon-copyright-mark'></span>2017 Daniel Palmer</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+<script src="C:\Users\danpal01\Desktop\VSCODE\indexVSCodeJS.js"></script>
+
+</html>

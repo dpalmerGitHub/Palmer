@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Quick Tools</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='C:\Users\danpal01\Desktop\VSCODE\indexVSCodeStyles.css' rel="stylesheet">
+</head>
+
+<body data-title='newQuickToolsVS'>
+    <div id="sidebar">
+        <ul class="nav">
+            <li class="active"><a href="C:\Users\danpal01\Desktop\VSCODE\indexVSCode.html"><span class= 'glyphicon glyphicon-home'></span>Home</a></li>
+            <li><a href="#"><span class='glyphicon glyphicon-info-sign'></span>About</a></li>
+            <li>
+                <a href="C:\Users\danpal01\Desktop\VSCODE\contactVSCode.html"><span class='glyphicon glyphicon-envelope'></span>Contact</a>
+            </li>
+            <li><a href="C:\Users\danpal01\Desktop\VSCODE\newQuickToolsVS.html" id='quickTools'><span class='glyphicon glyphicon-wrench'></span>Quick Tools</a></li>
+        </ul>
+    </div>
+
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <a href="#" id="sideBarToggle" class="btn btn-sm navbar-brand">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="C:\Users\danpal01\Desktop\My Stuff\NewResume2017\Federal_Resume_Template_Daniel_Palmer.pdf" class="btn btn-sm btn-info" download>
+                        <span class="glyphicon glyphicon-download"></span><span>RESUME</span>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main" class="container-fluid">
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <header class='centerAlignText'>
+                    <h1>My Tools</h1>
+                </header>
+                <div class='col-md-8 col-md-offset-2'>
+                    <p class='paragraphMargin'>These are just a few tools I designed and use currently to help me complete my work quicker and more efficently. Nothing fancy, but useful.
+                    </p>
+                </div>
+            </div>
+            <div class='container'>
+                <div class='row'>
+                    <div id='querySelections' class='col-lg-4 col-md-4 col-sm-4'>
+                        <div class="form-group">
+                            <label for="sel1">Select RAMS Table to Query:</label>
+                            <select class="form-control" id="tables">
+                        <option>(Select A Table)</option>
+                        <option>RMS_SSN_DETAILS</option>
+                        <option>RMS_SSN_HEADERS</option>
+                        <option>PURCHASE_ORDERS</option>
+                        
+                        
+                     </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceNowHead">Select a Service-Now Function:</label>
+                            <select class="form-control " id="serviceNow">
+                        <option>(Select A Function)</option>
+                        <option>g_form.getValue</option>
+                        <option>g_form.setValue</option>
+                        <option></option>
+                        <option></option>
+                     </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceNowHead">Select a Service-Now Template:</label>
+                            <select class="form-control" id="serviceNowTemplates">
+                        <option>(Select A Function)</option>
+                        <option>Script Include Ajax Template</option>
+                        <option>Client Script Ajax Template</option>
+                        
+                     </select>
+                        </div>
+                    </div>
+                    <div class='col-lg-4 col-md-4 col-sm-4'>
+                        <div class="form-group">
+                            <p>
+                                <label for="myText">Input Data to Format:</label>
+                                <textarea class="form-control" rows="10" id="myText"></textarea>
+                            </p>
+                            <p id='dataTotal'>0 data unit(s)</p>
+                            <button type="button" class='btn btn-primary' onclick="formatData()">Format</button>
+                            <button type="button" class='btn btn-primary btn-sm' onclick="" id="clearFormatter">Clear</button>
+                        </div>
+                    </div>
+                    <div class='col-lg-4 col-md-4 col-sm-4'>
+                        <label for='wordCountArea' id='result'>Formatted Results:</label>
+                        <p id='wordCountArea' class="form-control backGroundFieldColor"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12 col-md-12 col-sm-12'>
+                        <div class='form-group'>
+                            <label for='query'>Query/Code Generator:</label>
+                            <p class="form-control" id="query">
+                            </p>
+                            <button type="button" class='btn btn-primary' onclick="createQuery()">Create Query</button>
+                            <!--<button type="button" class = 'btn btn-primary btn-sm' onclick = "cleanQuery()" id = "cleanQuery">Clean Query</button>-->
+                            <button type="button" class='btn btn-primary btn-sm' onclick="clearData()" id="clearQuery">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-6 col-md-6 col-sm-6'>
+                        <div class='form-group'>
+
+                            <header>
+                                <h3>Track A Package</h3>
+                            </header>
+                            <label for='carrier'>Select A Carrier</label>
+                            <select class='form-control' id='carrier'>
+                           <option>-Select-</option>
+                           <option>UPS</option>
+                           <option>Fedex</option>
+                        </select>
+                            <label for='trackingNumber'>Enter Tracking Number</label>
+                            <input type='text' id='trackingNumber' class='form-control' value="" required/>
+                            <a id='trackingSubmit' target='_blank' class='btn btn-primary' data-link-button='Search'>Search</a>
+
+                        </div>
+                    </div>
+                    <div class='col-lg-6 col-md-6 col-sm-6'>
+                        <div class='form-group'>
+
+                            <header>
+                                <h3>Pick A Search Engine</h3>
+                            </header>
+                            <label for='engine'>Select An Engine</label>
+                            <select class='form-control' id='engine'>
+                           <option>-Select-</option>
+                           <option>Google</option>
+                           <option>Yahoo</option>
+                           <option>Bing</option>
+                        </select>
+                            <label for='searchInfo'>Enter Search Information</label>
+                            <input type='text' id='searchInfo' class='form-control' value="" required/>
+                            <a id='searchEngine' class='btn btn-primary' data-link-button='Search'>Search</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer" class="container-fluid">
+        <div class="navbar navbar-fixed-bottom">
+            <h4 class="text-center text-info"><span class='glyphicon glyphicon-copyright-mark'></span>2017 Daniel Palmer</h4>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="C:\Users\danpal01\Desktop\VSCODE\indexVSCodeJS.js">
+</script>
+
+</html>

@@ -1,0 +1,191 @@
+ body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 14px;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ label {
+     margin-top: 15px;
+ }
+ 
+ #footer {
+     margin-top: 250px;
+ }
+ 
+ #footer .navbar {
+     background-color: #2a2c36;
+ }
+ 
+ .profileImage {
+     max-width: 50px;
+     border: 1px solid #222;
+     padding: 3px;
+ }
+ 
+ .menu {
+     font-size: 12px;
+ }
+ 
+ .menu li {
+     list-style-type: none;
+ }
+ 
+ .menu li.active {
+     font-weight: bold;
+ }
+ 
+ .menu li a {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .menu li a:hover {
+     font-size: 18px;
+ }
+ 
+ #sidebar {
+     background: #2a2c36;
+     /*color: #eee;*/
+     position: fixed;
+     height: 100%;
+     width: 0;
+     overflow: hidden;
+     left: 0;
+     margin: 0;
+     transition: width ease .35s;
+     padding: 50px 0 50px 0;
+ }
+ 
+ #sidebar.hide-sidebar {
+     width: 250px;
+     transition: width ease .35s;
+ }
+ 
+ #wrapper {
+     transition: margin-left ease .35s;
+ }
+ 
+ #wrapper.hide-sidebar {
+     margin-left: 250px;
+     transition: margin-left ease .35s;
+ }
+ 
+ #sideBarToggle {
+     background: #2a2c36;
+     color: #fff;
+ }
+ 
+ #sideBarToggle:focus {
+     outline-color: #2a2c36;
+ }
+ 
+ ul.nav a {
+     color: white;
+ }
+ 
+ ul.nav a:hover {
+     color: #2a2c36;
+ }
+ 
+ #wordCountArea {
+     height: 315px;
+     width: 300px;
+     overflow: scroll;
+     border-style: solid;
+     border-width: thin;
+ }
+ 
+ #query {
+     height: 300px;
+     overflow: scroll;
+     border-style: solid;
+     border-width: thin;
+ }
+ 
+ #dataFilter {
+     height: 300px;
+     overflow: scroll;
+     border-style: solid;
+     border-width: thin;
+ }
+ 
+ #myText {
+     resize: vertical;
+ }
+ 
+ #myText2 {
+     resize: vertical;
+ }
+ 
+ #dataTotal {
+     float: right;
+ }
+ 
+ label textarea {
+     vertical-align: top;
+ }
+ 
+ label[for='query'] {
+     padding-top: 100px;
+ }
+ 
+ a[data-link-button='Search'] {
+     margin-top: 10px;
+ }
+ 
+ form[data-form-name='Contact'] header {
+     text-align: center;
+ }
+ 
+ #submitContactForm {
+     margin-top: 10px;
+ }
+ 
+ .navbar-default {
+     background-color: #2a2c36;
+     color: #fff;
+ }
+ 
+ .navbar-default .navbar-brand {
+     color: #fff;
+ }
+ 
+ .navbar-default .navbar-brand:hover {
+     color: #33b5e5;
+ }
+ 
+ span.glyphicon {
+     padding-right: 5px;
+     font-size: 14px;
+ }
+ 
+ .homePageContainers {
+     margin-top: 100px;
+     padding-bottom: 25px;
+     text-align: center;
+ }
+ 
+ .centerAlignText {
+     text-align: center;
+ }
+ 
+ th.centerAlignText {
+     font-size: 18px;
+ }
+ 
+ p {
+     line-height: 2.5em;
+ }
+ 
+ .greenInfoParagraphs {
+     background-color: #2BBBAD;
+     color: #fff;
+     border-radius: 8px;
+     padding: 10px;
+     margin-bottom: 50px;
+ }
+ 
+ .paragraphMargin {
+     margin-bottom: 50px;
+ }
