@@ -1,32 +1,43 @@
 // Write your Javascript code.
 //Javascript File:indexVSCode.js
+$(document).ready(function() {
+    $('#fadeInWrap').fadeIn(1000);
+    if ($("body").data("title") === "indexVSCode" || $("body").data("title") === "newQuickToolsVS" || $("body").data("title") === "contactVSCode" || $("body").data("title") === "homePageVSCode") {
+        $('[data-toggle="tooltip"]').tooltip();
 
-if ($("body").data("title") === "indexVSCode" || $("body").data("title") === "newQuickToolsVS" || $("body").data("title") === "contactVSCode") {
+        var $sidebarAndWrapper = $("#sidebar,#wrapper");
+        var $icon = $("#sideBarToggle i.glyphicon");
+
+        $("#sideBarToggle").on("click", function() {
+            $sidebarAndWrapper.toggleClass("hide-sidebar");
 
 
-    var $sidebarAndWrapper = $("#sidebar,#wrapper");
-    var $icon = $("#sideBarToggle i.glyphicon");
+        });
 
-    $("#sideBarToggle").on("click", function() {
-        $sidebarAndWrapper.toggleClass("hide-sidebar");
-    });
+        $("#sidebar").mouseleave(function() {
+            $sidebarAndWrapper.removeClass("hide-sidebar");
+        });
 
-    $("#sidebar").mouseleave(function() {
-        $sidebarAndWrapper.removeClass("hide-sidebar");
-    });
+        $(window).resize(function() {
+            if ($(window).width() == 768) {
+                confirm("And yes, it's responsive. :)");
+            }
+        });
 
-    /*$(document).scroll(function() {
-        if ($(document).scrollTop() > 15) {
-            $("nav").css({ "width": "100%", "position": "fixed", 'height': '80px', "top": "0", "margin-bottom": "20px", "opactiy": "1" });
-            $("#sideBarToggle").css({ "display": "none" });
-            $("#sideBar")
-        } else {
-            $("nav").css({ "width": "100%", "position": "relative", 'height': '50px', "top": "0", "margin-bottom": "20px" });
-            $("#sideBarToggle").css({ "display": "block" });
-        }
-    });*/
+        /*$(document).scroll(function() {
+            if ($(document).scrollTop() > 15) {
+                $("nav").css({ "width": "100%", "position": "fixed", 'height': '80px', "top": "0", "margin-bottom": "20px", "opactiy": "1" });
+                $("#sideBarToggle").css({ "display": "none" });
+                $("#sideBar")
+            } else {
+                $("nav").css({ "width": "100%", "position": "relative", 'height': '50px', "top": "0", "margin-bottom": "20px" });
+                $("#sideBarToggle").css({ "display": "block" });
+            }
+        });
+        */
 
-}
+    }
+});
 
 
 
@@ -128,6 +139,16 @@ if ($("body").data("title") === "newQuickToolsVS") {
 
     //END BOTH CLEAR BUTTONS
 
+    //RESET BUTTON
+    var resetButton = document.getElementById("reset");
+    resetButton.onclick = function() {
+        document.getElementById("tables").value = "(Select A Table)";
+        document.getElementById("serviceNow").value = "(Select A Function)";
+        document.getElementById('serviceNowTemplates').value = "(Select A Template)";
+    }
+
+    //END RESET BUTTON
+
 
 
     //Start Tracking Number script
@@ -184,6 +205,13 @@ if ($("body").data("title") === "newQuickToolsVS") {
 
 //Start Contact Form Code
 if ($("body").data("title") === "contactVSCode") {
+    /*$("#trackingSubmit").on("click",function(){
+        if($("#carrier").val() == "Select"){
+           $('<div/>',{'id':'dialog','title':'This is my dialog'}).appendTo('body');
+            $( "#dialog" ).dialog();
+    }
+    });*/
+
 
     //Start Ajax requests and posts to Google Spreadsheet
     var $name = $('#name');
@@ -194,37 +222,37 @@ if ($("body").data("title") === "contactVSCode") {
 
 
     $("#submitContactForm").on("click", function() {
-        if ($name.val() == "" || $comments.val() == "" || $email.val() == "") {
-            return false;
-        } else {
+            if ($name.val() == "" || $comments.val() == "" || $email.val() == "") {
+                return false;
+            } else {
 
-            var toDo = {
-                'entry.1399516880': $name.val(),
-                'entry.1548214041': $comments.val(),
-                'entry.1835749748': $email.val()
-            };
-
-
-            $.ajax({
-                type: 'POST',
-                url: 'https://docs.google.com/forms/d/e/1FAIpQLScWwiepACaliI6l7r8zw-JZMBoBNo_W4SkO-g4_qs0XJubFzg/formResponse',
-                data: toDo,
-                success: function() {
+                var toDo = {
+                    'entry.1399516880': $name.val(),
+                    'entry.1548214041': $comments.val(),
+                    'entry.1835749748': $email.val()
+                };
 
 
-                },
-                error: function() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScWwiepACaliI6l7r8zw-JZMBoBNo_W4SkO-g4_qs0XJubFzg/formResponse',
+                    data: toDo,
+                    success: function() {
 
-                }
-            })
 
-            document.getElementById("contactForm").reset();
-            $("#submittedSuccessfullyMessage").html("Your comment was successfully submitted");
+                    },
+                    error: function() {
 
-            //function end
+                    }
+                })
 
-        }
-    })
+                document.getElementById("contactForm").reset();
+                $("#submittedSuccessfullyMessage").text("Your comment was successfully submitted");
+
+                //function end
+
+            }
+        }) //end on click
 
 
 

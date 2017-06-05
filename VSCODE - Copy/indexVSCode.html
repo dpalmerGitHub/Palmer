@@ -4,18 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>My Quick Tools</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N" crossorigin="anonymous">
@@ -23,12 +22,11 @@
     <link href='C:\Users\danpal01\Desktop\VSCODE\indexVSCodeStyles.css' rel="stylesheet">
 </head>
 
-
 <body data-title='indexVSCode'>
     <div id="sidebar">
         <ul class="nav">
-            <li class="active"><a href="C:\Users\danpal01\Desktop\VSCODE\indexVSCode.html"><span class= 'glyphicon glyphicon-home'></span>Home</a></li>
-            <li><a href="#"><span class='glyphicon glyphicon-info-sign'></span>About</a></li>
+            <li class="active"><a href="C:\Users\danpal01\Desktop\VSCODE\homePageVSCode.html"><span class= 'glyphicon glyphicon-home'></span>Home</a></li>
+            <li><a href="C:\Users\danpal01\Desktop\VSCODE\indexVSCode.html"><span class='glyphicon glyphicon-info-sign'></span>About</a></li>
             <li>
                 <a href="C:\Users\danpal01\Desktop\VSCODE\contactVSCode.html"><span class='glyphicon glyphicon-envelope'></span>Contact</a>
             </li>
@@ -37,17 +35,14 @@
     </div>
 
 
+
     <div id="wrapper">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-
+        <nav class="navbar-default">
+            <div class='container-fluid'>
                 <ul class="nav navbar-nav navbar-left">
-
                     <a href="#" id="sideBarToggle" class="navbar-brand">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                     </a>
-
-
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <a href="C:\Users\danpal01\Desktop\My Stuff\NewResume2017\Daniel_Palmer's_Resume.pdf" class="btn btn-sm btn-info" download>
@@ -55,114 +50,160 @@
                     </a>
                 </ul>
             </div>
-
         </nav>
-
-        <div id="main" class="container-fluid homePageContainers">
-            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                <header class='centerAlignText'>
-                    <h1>A Little About Me</h1>
-                </header>
+        <div id='fadeInWrap'>
+            <div id="main" class="container-fluid homePageContainers">
+                <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <div class='col-md-8 col-md-offset-2'>
+                        <header class='centerAlignText bottomBorder'>
+                            <h1>About this Site</h1>
+                        </header>
+                        <p> This site was built to serve as proof that I am knowledgable in different aspects of web page development and design. While I may not hold a degree in Computer Science or an IT related major, through diligence, persistence, self-study,
+                            and hard work, I was able to learn and apply the basics (as well as the more advanced) skills needed by any web developer today. I am more than comfortable utilizing HTML, CSS, Javascript, JQuery, and Bootstrap, and I have
+                            implemented these skills in a production environment. For more details, please have a look at my <a href="C:\Users\danpal01\Desktop\My Stuff\NewResume2017\Daniel_Palmer's_Resume.pdf" download><b>resume</b></a>. Hope to hear
+                            from you soon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='container-fluid homePageContainers'>
                 <div class='col-md-8 col-md-offset-2'>
-                    <p>This site was built to serve as proof that I am knowledgable in different aspects of web page development and design. While I don't hold a degree in Computer Science or an IT related major, through diligence, persistence, self-study,
-                        and hard work, I was able to learn and apply the basics (as well as the more advanced) skills needed by any web developer today. I am more than comfortable utilizing HTML, CSS, Javascript, JQuery, and Bootstrap, and I have implemented
-                        these skills in a produciton environment. After working as a Support Center Analyst at Kate Spade and Company, I was promoted to an Application Support Analyst with a dual role serving as a ServiceNow Administrator, assisting and
-                        heading projects in developing UI pages,forms,workflows, client scripts, business rules, script includes, reports, scheduled jobs, and various other ServiceNow development features. Please click the 'Resume' link above to download
-                        a PDF copy of my resume for further details and contact information. Thank you and I hope to hear from you soon.
-                    </p>
+                    <header class='centerAlignText bottomBorder'>
+                        <h1>Experience</h1>
+                    </header>
+                </div>
+                <div class='row'>
+                    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class='centerAlignText btn-info'>Skills</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>CSS</td>
+                                </tr>
+                                <tr>
+                                    <td>BOOTSTRAP</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>JAVASCRIPT</td>
+                                </tr>
+                                <tr>
+                                    <td>JQUERY</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>SQL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class='centerAlignText btn-info'>Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ServiceNow</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>Toad SQL Client</td>
+                                </tr>
+                                <tr>
+                                    <td>Citrix Xenapp</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>Bomgar</td>
+                                </tr>
+                                <tr>
+                                    <td>Micros Xstore</td>
+                                </tr>
+                                <tr class='info'>
+                                    <td>Micros Xcenter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class='container-fluid homePageContainers'>
+                <div class='col-md-8 col-md-offset-2'>
+                    <header class='centerAlignText bottomBorder'>
+                        <h1>Education</h1>
+                    </header>
+                </div>
+                <div class='row'>
+                    <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <table class="table table-bordered table-hover ">
+                            <thead>
+                                <tr>
+                                    <th class='centerAlignText btn-success'>School Name:</th>
+                                    <th class='centerAlignText btn-success'>Status:</th>
+                                    <th class='centerAlignText btn-success'>Degree:</th>
+                                    <th class='centerAlignText btn-success'>GPA:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Jay College of Criminal Justice</td>
+                                    <td>Graduated (2007)</td>
+                                    <td>B.A. in Criminal Justice <i>Minor in Law</i></td>
+                                    <td>3.18</td>
+                                </tr>
+                                <tr class='success'>
+                                    <td>Saint Peter's University</td>
+                                    <td>Currently Attending (12 credits remaining)</td>
+                                    <td>Enrolled in Dual Master's Degree Program: MBA/MSA</td>
+                                    <td>3.98</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class='container-fluid homePageContainers bottomDivMargins'>
+                <div class='col-md-8 col-md-offset-2'>
+                    <header class='centerAlignText bottomBorder'>
+                        <h1>Certifications</h1>
+                    </header>
+                </div>
+                <div class='row'>
+                    <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                        <div class="panel panel-default">
+                            <div class="panel-heading panelHeaderStyle">ServiceNow</div>
+                            <div class="panel-body" data-toggle='tooltip' data-placement="top" title='Passing the ServiceNow System Administrator Certification Exam demonstrates mastery of ServiceNow System Administration and certifies that a candidate has the skills and essential knowledge necessary to manage the configuration, implementation and maintenance of the ServiceNow system.'>
+                                <a href='https://www.servicenow.com/services/training-and-certification/certified-system.html' target='_blank'><img src='C:\Users\danpal01\Desktop\VSCODE\servicenow-certified-csa.png' width='200px' height='200px' \></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                        <div class="panel panel-default">
+                            <div class="panel-heading panelHeaderStyle">CompTIA</div>
+                            <div class=" panel-body" data-toggle='tooltip' data-placement="bottom" title='CompTIA Network+ is a vendor neutral networking certification that is trusted around the world. It validates the essential knowledge and skills needed to confidently design, configure, manage and troubleshoot any wired and wireless networks. CompTIA Network+ certified individuals are in-demand worldwide.'>
+                                <a href='https://certification.comptia.org/certifications/network' target="_blank"><img src='C:\Users\danpal01\Desktop\VSCODE\NetworkPlus Logo Certified CE Black.png' width='200px' height='200px' /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading panelHeaderStyle">CompTIA</div>
+                            <div class="panel-body " data-toggle='tooltip' data-placement="top" title='CompTIA Security+ is the certification globally trusted to validate foundational, vendor-neutral IT security knowledge and skills. As a benchmark for best practices in IT security, this certification covers the essential principles for network security and risk management – making it an important stepping stone of an IT security career.'>
+                                <a href="https://certification.comptia.org/certifications/security" target="_blank"><img src=' C:\Users\danpal01\Desktop\VSCODE\SecurityPlus Logo Certified CE Black.png ' width='200px ' height='200px' /></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class='container-fluid homePageContainers'>
-            <header class='centerAlignText'>
-                <h1>Experience</h1>
-            </header>
-            <div class='row'>
-                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class='centerAlignText btn-info'>Skills</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HTML</td>
-                            </tr>
-                            <tr>
-                                <td>CSS</td>
-                            </tr>
-                            <tr>
-                                <td>BOOTSTRAP</td>
-                            </tr>
-                            <tr>
-                                <td>JAVASCRIPT</td>
-                            </tr>
-                            <tr>
-                                <td>JQUERY</td>
-                            </tr>
-                            <tr>
-                                <td>SQL</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class='centerAlignText btn-info'>Applications</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ServiceNow</td>
-                            </tr>
-                            <tr>
-                                <td>Toad SQL Client</td>
-                            </tr>
-                            <tr>
-                                <td>Citrix Xenapp</td>
-                            </tr>
-                            <tr>
-                                <td>Bomgar</td>
-                            </tr>
-                            <tr>
-                                <td>Micros Xstore</td>
-                            </tr>
-                            <tr>
-                                <td>Micros Xcenter</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
     </div>
-
-    </div>
-    </div>
-    <div id="footer" class="container-fluid">
-        <div class="navbar navbar-fixed-bottom">
-            <h4 class="text-center text-info"><span class='glyphicon glyphicon-copyright-mark'></span>Daniel Palmer</h4>
-        </div>
-    </div>
-
-
-
-
-
-
-    </div>
-    </div>
-
 </body>
-
-<script src="C:\Users\danpal01\Desktop\VSCODE\indexVSCodeJS.js"></script>
+<script src="C:\Users\danpal01\Desktop\VSCODE\indexVSCodeJS.js "></script>
 
 </html>
